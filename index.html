@@ -1,60 +1,311 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Enmanuel Gavidia | Developer</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enmanuel Gavidia | Full Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
 
-  <header class="hero">
-    <h1>Enmanuel Gavidia</h1>
-    <p>Junior Web Developer</p>
-  </header>
+  <!-- Cursor personalizado -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
 
-  <section class="about">
-    <h2>Sobre mí</h2>
-    <p>
-      Desarrollador web junior con conocimientos en HTML, CSS, JavaScript, PHP y MySQL.
-      Enfocado en crear sitios modernos, responsive y sistemas web básicos.
-    </p>
-  </section>
+  <!-- Fondo animado -->
+  <div class="bg-grid"></div>
 
-  <section class="skills">
-    <h2>Tecnologías</h2>
-    <div class="skills-list">
-      <span>HTML5</span>
-      <span>CSS3</span>
-      <span>JavaScript</span>
-      <span>PHP</span>
-      <span>MySQL</span>
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">EG<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#tecnologias">Skills</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="status-dot"></span> Disponible para trabajar
+      </div>
+      <h1 class="hero-title">
+        <span class="line">Enmanuel</span>
+        <span class="line accent">Gavidia</span>
+      </h1>
+      <p class="hero-subtitle">Full Stack Developer <span class="separator">—</span> Junior</p>
+      <p class="hero-desc">
+        Construyo sitios modernos, responsivos y funcionales.<br />
+        De la idea al código, del diseño al servidor.
+      </p>
+      <div class="hero-cta">
+        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-outline">Contactarme</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-card">
+        <div class="code-header">
+          <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+          <span class="filename">enmanuel.js</span>
+        </div>
+        <pre class="code-body"><span class="c-keyword">const</span> <span class="c-var">dev</span> = {
+  <span class="c-key">nombre</span>: <span class="c-str">"Enmanuel Gavidia"</span>,
+  <span class="c-key">rol</span>: <span class="c-str">"Full Stack Jr."</span>,
+  <span class="c-key">stack</span>: [
+    <span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>, <span class="c-str">"JS"</span>,
+    <span class="c-str">"PHP"</span>, <span class="c-str">"MySQL"</span>,
+    <span class="c-str">"WordPress"</span>
+  ],
+  <span class="c-key">disponible</span>: <span class="c-bool">true</span>,
+  <span class="c-key">pasion</span>: <span class="c-str">"crear soluciones"</span>
+};</pre>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
     </div>
   </section>
 
-  <section class="projects">
-    <h2>Proyectos</h2>
-
-    <div class="card">
-      <h3>Landing Page</h3>
-      <p>Diseño moderno y responsive con HTML y CSS.</p>
+  <!-- SOBRE MÍ -->
+  <section class="section" id="sobre-mi">
+    <div class="container">
+      <div class="section-label">01 — sobre mí</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Desarrollador con <span class="accent">ganas de crecer</span></h2>
+          <p>
+            Soy Enmanuel, desarrollador web junior con pasión por construir productos digitales que funcionen bien y se vean mejor. Me especializo en el desarrollo frontend y tengo bases sólidas en backend con PHP y MySQL.
+          </p>
+          <p>
+            Trabajo con WordPress para sitios de cliente y disfruto aprender nuevas tecnologías constantemente. Busco mi primera oportunidad profesional donde pueda aportar y seguir creciendo en un equipo real.
+          </p>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">6+</span>
+              <span class="stat-label">Tecnologías</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Proyectos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">100%</span>
+              <span class="stat-label">Compromiso</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card-wrap">
+          <div class="about-card">
+            <div class="about-avatar">
+              <div class="avatar-placeholder">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div class="avatar-ring"></div>
+            </div>
+            <div class="about-card-info">
+              <p class="card-name">Enmanuel Gavidia</p>
+              <p class="card-role">Full Stack Developer Jr.</p>
+              <div class="card-badges">
+                <span class="badge">Frontend</span>
+                <span class="badge">Backend</span>
+                <span class="badge">WordPress</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="card">
-      <h3>Portfolio Web</h3>
-      <p>Página personal con diseño adaptable.</p>
-    </div>
-
-    <div class="card">
-      <h3>Sistema Web</h3>
-      <p>Aplicación básica con PHP y MySQL para gestión de datos.</p>
-    </div>
-
   </section>
 
-  <section class="contact">
-    <h2>Contacto</h2>
-    <p>Email: enmagav19@gmail.com</p>
+  <!-- TECNOLOGÍAS -->
+  <section class="section section-dark" id="tecnologias">
+    <div class="container">
+      <div class="section-label light">02 — stack tecnológico</div>
+      <h2 class="section-title light">Mis <span class="accent">herramientas</span></h2>
+      <div class="tech-grid">
+
+        <div class="tech-card" data-delay="0">
+          <div class="tech-icon"><i class="fa-brands fa-html5"></i></div>
+          <h3>HTML5</h3>
+          <p>Estructura semántica, accesibilidad y buenas prácticas.</p>
+          <div class="tech-bar"><div class="tech-fill" style="--w:90%"></div></div>
+        </div>
+
+        <div class="tech-card" data-delay="1">
+          <div class="tech-icon"><i class="fa-brands fa-css3-alt"></i></div>
+          <h3>CSS3</h3>
+          <p>Flexbox, Grid, animaciones y diseño responsive.</p>
+          <div class="tech-bar"><div class="tech-fill" style="--w:85%"></div></div>
+        </div>
+
+        <div class="tech-card" data-delay="2">
+          <div class="tech-icon"><i class="fa-brands fa-js"></i></div>
+          <h3>JavaScript</h3>
+          <p>DOM, eventos, fetch API y lógica del lado cliente.</p>
+          <div class="tech-bar"><div class="tech-fill" style="--w:75%"></div></div>
+        </div>
+
+        <div class="tech-card" data-delay="3">
+          <div class="tech-icon"><i class="fa-brands fa-php"></i></div>
+          <h3>PHP</h3>
+          <p>Backend básico, formularios y conexión con base de datos.</p>
+          <div class="tech-bar"><div class="tech-fill" style="--w:65%"></div></div>
+        </div>
+
+        <div class="tech-card" data-delay="4">
+          <div class="tech-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>MySQL</h3>
+          <p>Diseño de tablas, consultas SQL y gestión de datos.</p>
+          <div class="tech-bar"><div class="tech-fill" style="--w:65%"></div></div>
+        </div>
+
+        <div class="tech-card" data-delay="5">
+          <div class="tech-icon"><i class="fa-brands fa-wordpress"></i></div>
+          <h3>WordPress</h3>
+          <p>Temas, plugins, personalización y sitios para clientes.</p>
+          <div class="tech-bar"><div class="tech-fill" style="--w:70%"></div></div>
+        </div>
+
+      </div>
+    </div>
   </section>
 
+  <!-- PROYECTOS -->
+  <section class="section" id="proyectos">
+    <div class="container">
+      <div class="section-label">03 — proyectos</div>
+      <h2 class="section-title">Mi <span class="accent">trabajo</span></h2>
+      <div class="projects-grid">
+
+        <div class="project-card featured">
+          <div class="project-badge">Destacado</div>
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-globe"></i></div>
+            <div class="project-links">
+              <a href="#" class="proj-link" title="Ver código"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="proj-link" title="Ver en vivo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>Landing Page Moderna</h3>
+          <p>Diseño moderno y responsive con HTML y CSS puro. Incluye animaciones, secciones hero, testimonios y formulario de contacto.</p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-solid fa-server"></i></div>
+            <div class="project-links">
+              <a href="#" class="proj-link" title="Ver código"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <h3>Sistema de Gestión</h3>
+          <p>Aplicación web con PHP y MySQL para gestión de datos. CRUD completo con interfaz de administración.</p>
+          <div class="project-tags">
+            <span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-top">
+            <div class="project-icon"><i class="fa-brands fa-wordpress"></i></div>
+            <div class="project-links">
+              <a href="#" class="proj-link" title="Ver código"><i class="fa-brands fa-github"></i></a>
+              <a href="#" class="proj-link" title="Ver en vivo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <h3>Sitio WordPress</h3>
+          <p>Desarrollo de sitio web con WordPress, tema personalizado y plugins optimizados para rendimiento y SEO.</p>
+          <div class="project-tags">
+            <span>WordPress</span><span>PHP</span><span>CSS</span>
+          </div>
+        </div>
+
+        <div class="project-card add-project">
+          <div class="add-icon"><i class="fa-solid fa-plus"></i></div>
+          <p>Próximamente más proyectos...</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section section-dark" id="contacto">
+    <div class="container">
+      <div class="section-label light">04 — contacto</div>
+      <h2 class="section-title light">Hablemos <span class="accent">juntos</span></h2>
+      <p class="contact-desc">¿Tienes un proyecto en mente o buscas un desarrollador junior? Estoy disponible y con ganas de sumarte valor.</p>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <a href="mailto:enmagav19@gmail.com" class="contact-item">
+            <div class="contact-ico"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <span class="contact-val">enmagav19@gmail.com</span>
+            </div>
+          </a>
+          <a href="https://github.com/enmanuel-gavidia" target="_blank" class="contact-item">
+            <div class="contact-ico"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <span class="contact-val">enmanuel-gavidia</span>
+            </div>
+          </a>
+          <a href="#" target="_blank" class="contact-item">
+            <div class="contact-ico"><i class="fa-brands fa-linkedin"></i></div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-val">Agregar tu LinkedIn</span>
+            </div>
+          </a>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="nombre" placeholder="Tu nombre" required />
+            <label for="nombre">Nombre</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="tu@email.com" required />
+            <label for="email">Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="mensaje" rows="4" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            <label for="mensaje">Mensaje</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">
+            Enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-logo">EG<span class="dot">.</span></p>
+      <p class="footer-copy">© 2025 Enmanuel Gavidia — Hecho con <span style="color:var(--accent)">♥</span> y mucho café</p>
+      <div class="footer-links">
+        <a href="https://github.com/enmanuel-gavidia" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:enmagav19@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
