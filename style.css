@@ -1,7 +1,7 @@
 /* =========================================
    ENMANUEL GAVIDIA — PORTFOLIO CSS
    ========================================= */
-
+ 
 :root {
   --bg: #0a0a0f;
   --bg2: #111118;
@@ -17,7 +17,7 @@
   --radius: 16px;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+ 
 /* ─── RESET ─── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
@@ -31,7 +31,7 @@ body {
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
 img { max-width: 100%; display: block; }
-
+ 
 /* ─── CURSOR ─── */
 .cursor {
   width: 10px; height: 10px;
@@ -54,7 +54,7 @@ img { max-width: 100%; display: block; }
   transition: transform 0.15s ease, width 0.2s, height 0.2s, border-color 0.2s;
 }
 body:hover .cursor { opacity: 1; }
-
+ 
 /* ─── BG GRID ─── */
 .bg-grid {
   position: fixed;
@@ -66,7 +66,7 @@ body:hover .cursor { opacity: 1; }
   pointer-events: none;
   z-index: 0;
 }
-
+ 
 /* ─── NAVBAR ─── */
 .navbar {
   position: fixed;
@@ -115,7 +115,7 @@ body:hover .cursor { opacity: 1; }
 }
 .nav-links a:hover { color: var(--accent); }
 .nav-links a:hover::after { width: 100%; }
-
+ 
 .hamburger {
   display: none;
   flex-direction: column;
@@ -132,7 +132,7 @@ body:hover .cursor { opacity: 1; }
   border-radius: 2px;
   transition: var(--transition);
 }
-
+ 
 /* ─── HERO ─── */
 .hero {
   min-height: 100vh;
@@ -171,7 +171,7 @@ body:hover .cursor { opacity: 1; }
   50% { opacity: 0.5; transform: scale(0.8); }
 }
 .hero-title {
-  font-size: clamp(3rem, 7vw, 5.5rem);
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.03em;
@@ -210,7 +210,7 @@ body:hover .cursor { opacity: 1; }
   flex-wrap: wrap;
   animation: fadeUp 0.7s 0.5s ease both;
 }
-
+ 
 /* ─── BUTTONS ─── */
 .btn {
   display: inline-flex;
@@ -246,7 +246,7 @@ body:hover .cursor { opacity: 1; }
   transform: translateY(-2px);
 }
 .btn-full { width: 100%; justify-content: center; }
-
+ 
 /* ─── CODE CARD ─── */
 .hero-visual {
   flex: 1;
@@ -296,7 +296,7 @@ body:hover .cursor { opacity: 1; }
 .c-key { color: #50fa7b; }
 .c-str { color: #f1fa8c; }
 .c-bool { color: #ff79c6; }
-
+ 
 /* ─── SCROLL HINT ─── */
 .scroll-hint {
   position: absolute;
@@ -323,7 +323,7 @@ body:hover .cursor { opacity: 1; }
   0%, 100% { transform: scaleY(1); opacity: 1; }
   50% { transform: scaleY(0.5); opacity: 0.3; }
 }
-
+ 
 /* ─── SECTIONS ─── */
 .section { padding: 6rem 0; position: relative; z-index: 1; }
 .section-dark {
@@ -351,7 +351,7 @@ body:hover .cursor { opacity: 1; }
 }
 .section-title.light { color: var(--white); }
 .section-title .accent { color: var(--accent); }
-
+ 
 /* ─── ABOUT ─── */
 .about-grid {
   display: grid;
@@ -434,7 +434,7 @@ body:hover .cursor { opacity: 1; }
   font-family: var(--font-mono);
   font-size: 0.7rem;
 }
-
+ 
 /* ─── TECH GRID ─── */
 .tech-grid {
   display: grid;
@@ -489,7 +489,7 @@ body:hover .cursor { opacity: 1; }
   transition: width 1s cubic-bezier(0.4,0,0.2,1) 0.3s;
 }
 .tech-card.visible .tech-fill { width: var(--w); }
-
+ 
 /* ─── PROJECTS ─── */
 .projects-grid {
   display: grid;
@@ -580,7 +580,7 @@ body:hover .cursor { opacity: 1; }
 }
 .add-icon { font-size: 1.5rem; color: var(--border); }
 .add-project p { font-family: var(--font-mono); font-size: 0.8rem; }
-
+ 
 /* ─── CONTACT ─── */
 .contact-desc {
   color: var(--muted);
@@ -628,7 +628,7 @@ body:hover .cursor { opacity: 1; }
   margin-bottom: 0.2rem;
 }
 .contact-val { font-size: 0.9rem; color: var(--text); }
-
+ 
 /* ─── FORM ─── */
 .contact-form { display: flex; flex-direction: column; gap: 1.2rem; }
 .form-group { position: relative; }
@@ -672,7 +672,7 @@ body:hover .cursor { opacity: 1; }
 }
 .form-group input::placeholder,
 .form-group textarea::placeholder { color: transparent; }
-
+ 
 /* ─── FOOTER ─── */
 .footer {
   padding: 2rem 0;
@@ -699,7 +699,7 @@ body:hover .cursor { opacity: 1; }
 .footer-links { display: flex; gap: 1.2rem; }
 .footer-links a { color: var(--muted); font-size: 1.1rem; transition: color var(--transition); }
 .footer-links a:hover { color: var(--accent); }
-
+ 
 /* ─── REVEAL ANIMATION ─── */
 .reveal {
   opacity: 0;
@@ -707,7 +707,7 @@ body:hover .cursor { opacity: 1; }
   transition: opacity 0.7s ease, transform 0.7s ease;
 }
 .reveal.visible { opacity: 1; transform: translateY(0); }
-
+ 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 900px) {
   .hero { flex-direction: column; text-align: center; padding-top: 7rem; }
